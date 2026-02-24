@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<title>Për Nuçin tim ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- COUNTDOWN -->
+<div id="countdownScreen">
+    <h1>Po përgatitet diçka për ty...</h1>
+    <h2 id="countdown"></h2>
+</div>
+
+<!-- DECRYPT -->
+<div id="decryptScreen" class="hidden">
+    <h1>Decrypting love letter...</h1>
+    <div class="bar"><div id="progress"></div></div>
+</div>
+
+<!-- GLITCH NAME -->
+<div id="nameScreen" class="hidden">
+    <h1 class="glitch">NUÇI</h1>
+</div>
+
+<!-- START -->
+<div id="startScreen" class="hidden">
+    <h1>Kliko për të filluar</h1>
+    <p>(Mos e hap nëse nuk je gati të buzëqeshësh)</p>
+</div>
+
+<!-- STORY -->
+<div class="screen hidden">
+    <div id="text"></div>
+    <div class="cursor">|</div>
+</div>
+
+<!-- FINALE -->
+<div id="finale" class="hidden">
+    <img src="nuci.jpg" class="photo">
+    <h1 class="love">I LOVE YOU</h1>
+
+    <div id="question" class="hidden">
+        <h2>A do të dalësh sonte me mua?</h2>
+        <div class="buttons">
+            <button id="yes1">YES</button>
+            <button id="yes2">YES</button>
+        </div>
+    </div>
+</div>
+
+<canvas id="hearts"></canvas>
+
+<audio id="music" loop>
+<source src="https://cdn.pixabay.com/audio/2022/03/15/audio_c8c8a73467.mp3">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
