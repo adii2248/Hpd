@@ -1,0 +1,80 @@
+body{
+ background:black;
+ color:#ff4d88;
+ font-family:Courier New, monospace;
+ margin:0;
+ overflow:hidden;
+ text-align:center;
+}
+
+.hidden{display:none;}
+
+.screen{
+ position:absolute;
+ top:50%; left:50%;
+ transform:translate(-50%,-50%);
+ width:80%; max-width:800px;
+ font-size:20px; line-height:1.6;
+}
+
+.cursor{animation:blink 1s infinite;}
+@keyframes blink{50%{opacity:0;}}
+
+/* countdown */
+#countdownScreen{
+ position:absolute;
+ top:50%; left:50%;
+ transform:translate(-50%,-50%);
+}
+
+/* decrypt bar */
+.bar{width:300px;height:10px;border:1px solid #ff4d88;margin:auto;margin-top:20px;}
+#progress{height:100%;width:0%;background:#ff4d88;}
+
+/* glitch */
+.glitch{
+ font-size:80px;
+ animation:glitch 1s infinite;
+}
+@keyframes glitch{
+ 0%{text-shadow:2px 0 red,-2px 0 blue;}
+ 25%{text-shadow:-2px 0 red,2px 0 blue;}
+ 50%{text-shadow:2px 2px red,-2px -2px blue;}
+ 75%{text-shadow:-2px -2px red,2px 2px blue;}
+ 100%{text-shadow:0 0 15px #ff4d88;}
+}
+
+/* start */
+#startScreen{
+ position:absolute;
+ top:50%;left:50%;
+ transform:translate(-50%,-50%);
+ cursor:pointer;
+}
+
+/* finale */
+.photo{
+ width:260px;border-radius:20px;
+ box-shadow:0 0 30px #ff4d88;margin-bottom:20px;
+}
+
+.love{
+ font-size:80px;
+ animation:pulse 1.5s infinite;
+}
+@keyframes pulse{50%{transform:scale(1.1);}}
+
+/* question */
+button{
+ padding:12px 25px;
+ margin:10px;
+ font-size:18px;
+ background:#ff4d88;
+ border:none;color:white;
+ border-radius:10px;
+ cursor:pointer;
+ transition:.3s;
+}
+button:hover{transform:scale(1.2);box-shadow:0 0 15px #ff4d88;}
+
+canvas{position:fixed;top:0;left:0;pointer-events:none;}
